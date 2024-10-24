@@ -1,9 +1,19 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.css'; // importing the css file
+import Timer from './components/Timer'; // importing the timer from components
 
-function App() {
+function App() { // creating main app
   return (
-    <h1>My name is aarnav</h1>
+    <>
+      <div className={'intro'}>
+        <h1>Welcome to Pomodoro Timer</h1>
+      </div>
+      <main> 
+        <Timer />
+      </main>
+      
+    </>
+    
   );
 }
 
